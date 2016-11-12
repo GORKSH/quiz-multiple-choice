@@ -1,0 +1,101 @@
+
+#head
+{
+	background:linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 10%,rgba(0,0,0,0.45) 10%,rgba(0,0,0,0.45) 85%,rgba(0,0,0,0.7) 85%,rgba(0,0,0,0.7) 100%);;
+	opacity:1;
+	height:10vh;
+	font-size:3vw;
+
+
+}
+.question
+{
+	font-size:1.5vw;
+}
+
+.problem
+{
+	margin-left:15vw;
+    
+}
+
+label
+{
+	color:blue;
+
+}
+.ques2 , .ques3 , .ques4, .ques5 , .ques6,.ques7,.ques8,.ques9,.ques10
+{
+	display:none;
+}
+.btn1
+{
+	background:skyblue;
+}
+.nextbtn
+{
+	margin-left:15vw;
+	margin-bottom:10vh;
+}
+.finish
+{
+	position:absolute;
+	top:13vh;
+	left:77vw;
+}
+.buttondiv
+{
+	position:absolute;
+	font-size:1.5vw;
+	right:5vw;
+	top:25vh;
+	text-align: center;
+
+}
+.quitdiv
+{
+    position:absolute;
+    left:30vw;
+    top:30vh;
+    padding-top:5vh;
+    border-radius: 0.7vw;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 10%,rgba(0,0,0,0.45) 10%,rgba(0,0,0,0.45) 85%,rgba(0,0,0,0.7) 85%,rgba(0,0,0,0.7) 100%);;
+	opacity:1;
+	height:40vh;
+	width:40vw;
+	font-size:2vw;
+	z-index:100;
+	display:none;
+}
+.yesbtn
+{
+	position:absolute;
+	top:25vh;
+	right:10vw;
+	width:5vw;
+}
+.nobtn
+{
+    position:absolute;
+	top:25vh;
+	left:10vw;
+	width:5vw;
+
+}
+
+.intro
+{
+
+    position:absolute;
+    left:30vw;
+    top:30vh;
+    padding-top:5vh;
+    border-radius: 0.7vw;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 10%,rgba(0,0,0,0.45) 10%,rgba(0,0,0,0.45) 85%,rgba(0,0,0,0.7) 85%,rgba(0,0,0,0.7) 100%);;
+	opacity:1;
+	height:45vh;
+	width:40vw;
+	font-size:2vw;
+	
+
+}
