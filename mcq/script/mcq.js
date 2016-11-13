@@ -1,5 +1,7 @@
 var score=0;
 var s1=0,s2=0,s3=0,s4=0,s5=0,s6=0,s7=0,s8=0,s9=0,s10=0;
+
+
 $('.first').click(function(){
 
     if($(this).is(':checked'))
@@ -9,10 +11,11 @@ $('.first').click(function(){
         {
         	s1=4;
         }
-        else
+        else if($(this).val()=="incorrect")
         {
         	s1=-1;
         }
+        console.log(s1+' '+s2+' '+s3+' '+s4+' '+s5+' '+s6+' '+s7+' '+s8+' '+s9+' '+s10+' '+score);
     }
 });
 $('.second').click(function(){
@@ -22,10 +25,11 @@ $('.second').click(function(){
         {
         	s2=4;
         }
-        else
+        else if($(this).val()=="incorrect")
         {
         	s2=-1;
         }
+        console.log(s1+' '+s2+' '+s3+' '+s4+' '+s5+' '+s6+' '+s7+' '+s8+' '+s9+' '+s10+' '+score);
     }
 });
 $('.third').click(function(){
@@ -35,10 +39,11 @@ $('.third').click(function(){
         {
         	s3=4;
         }
-        else
+        else if($(this).val()=="incorrect")
         {
         	s3=-1;
         }
+        console.log(s1+' '+s2+' '+s3+' '+s4+' '+s5+' '+s6+' '+s7+' '+s8+' '+s9+' '+s10+' '+score);
     }
 });
 $('.fourth').click(function(){
@@ -48,10 +53,11 @@ $('.fourth').click(function(){
         {
         	s4=4;
         }
-        else
+        else if($(this).val()=="incorrect")
         {
         	s4=-1;
         }
+        console.log(s1+' '+s2+' '+s3+' '+s4+' '+s5+' '+s6+' '+s7+' '+s8+' '+s9+' '+s10+' '+score);
     }
 });
 $('.fifth').click(function(){
@@ -61,10 +67,11 @@ $('.fifth').click(function(){
         {
         	s5=4;
         }
-        else
+        else if($(this).val()=="incorrect")
         {
         	s5=-1;
         }
+        console.log(s1+' '+s2+' '+s3+' '+s4+' '+s5+' '+s6+' '+s7+' '+s8+' '+s9+' '+s10+' '+score);
     }
 });
 $('.sixth').click(function(){
@@ -74,10 +81,11 @@ $('.sixth').click(function(){
         {
         	s6=4;
         }
-        else
+        else if($(this).val()=="incorrect")
         {
         	s6=-1;
         }
+        console.log(s1+' '+s2+' '+s3+' '+s4+' '+s5+' '+s6+' '+s7+' '+s8+' '+s9+' '+s10+' '+score);
     }
 });
 $('.seventh').click(function(){
@@ -87,10 +95,11 @@ $('.seventh').click(function(){
         {
         	s7=4;
         }
-        else
+        else if($(this).val()=="incorrect")
         {
         	s7=-1;
         }
+        console.log(s1+' '+s2+' '+s3+' '+s4+' '+s5+' '+s6+' '+s7+' '+s8+' '+s9+' '+s10+' '+score);
     }
 });
 $('.eighth').click(function(){
@@ -100,10 +109,11 @@ $('.eighth').click(function(){
         {
         	s8=4;
         }
-        else
+        else if($(this).val()=="incorrect")
         {
         	s8=-1;
         }
+        console.log(s1+' '+s2+' '+s3+' '+s4+' '+s5+' '+s6+' '+s7+' '+s8+' '+s9+' '+s10+' '+score);
     }
 });
 $('.nineth').click(function(){
@@ -113,10 +123,11 @@ $('.nineth').click(function(){
         {
         	s9=4;
         }
-        else
+        else if($(this).val()=="incorrect")
         {
         	s9=-1;
         }
+        console.log(s1+' '+s2+' '+s3+' '+s4+' '+s5+' '+s6+' '+s7+' '+s8+' '+s9+' '+s10+' '+score);
     }
 });
 $('.tenth').click(function(){
@@ -126,10 +137,11 @@ $('.tenth').click(function(){
         {
         	s10=4;
         }
-        else
+        else if($(this).val()=="incorrect")
         {
         	s10=-1;
         }
+        console.log(s1+' '+s2+' '+s3+' '+s4+' '+s5+' '+s6+' '+s7+' '+s8+' '+s9+' '+s10+' '+score);
     }
 });
 var qno=1;
@@ -138,7 +150,7 @@ var qno=1;
 $(".nextbtn").click(function(){
    $(".nextbtn").show();
    qno=qno+1;
-   console.log(qno);
+   
    if(qno<11)
    {
    	for(var x=1;x<=10;x++)
@@ -199,11 +211,13 @@ $(".switch").click(function(){
 });
 $(".finish").click(function(){
    $(".quitdiv").show();
-   score=s1+s2+s3+s4+s5+s6+s7+s8+s9+s10;
+   
    $(".nobtn").click(function(){
      $(".quitdiv").hide();
    });
    $(".yesbtn").click(function(){
+   	 score=s1+s2+s3+s4+s5+s6+s7+s8+s9+s10;
+   	 console.log(s1+' '+s2+' '+s3+' '+s4+' '+s5+' '+s6+' '+s7+' '+s8+' '+s9+' '+s10+' '+score);
      $(".quitdiv").html("Your score is "+score);
      $(".quitdiv").css("text-align","center");
      $("input[type=radio]").attr('disabled', true);
